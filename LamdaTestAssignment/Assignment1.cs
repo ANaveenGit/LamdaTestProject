@@ -1,7 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
-[assembly: Parallelizable(ParallelScope.All)]
 
 namespace LamdaTest
 {
