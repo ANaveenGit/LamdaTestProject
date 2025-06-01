@@ -11,7 +11,7 @@ namespace LamdaTest
         public void Setup()
         {
             Driver = new ChromeDriver();
-            var options = new ChromeOptions();
+            //var options = new ChromeOptions();
             //options.AddArgument("--headless=new");
             //options.AddArgument("--disable-gpu");
             Driver.Manage().Window.Maximize();
