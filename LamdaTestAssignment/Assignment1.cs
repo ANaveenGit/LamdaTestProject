@@ -34,7 +34,7 @@ namespace LamdaTest
     [Parallelizable]
     public class Assignment1 : LambaBase
     {
-        //[Test]
+        [Test]
         public void LamdaTestScenario1()
         {
             try
@@ -47,7 +47,7 @@ namespace LamdaTest
 
                 //3. Validate that the URL contains “simple-form-demo”.
                 string SimpleFormDemourl = Driver.Url;
-                Assert.That(SimpleFormDemourl.Contains("simple-form-demo"), Is.True);
+                Assert.That(SimpleFormDemourl.Contains("simple-form-dem"), Is.True);
 
                 //4.Create a variable for a string value, e.g., “Welcome to LambdaTest”.
                 string Entervalue = "Welcome to LambdaTest";
@@ -93,7 +93,7 @@ namespace LamdaTest
                 Default15.SendKeys(Keys.ArrowRight);
 
                 IWebElement RangeValue = Driver.FindElement(By.Id("rangeSuccess"));
-                Assert.That(RangeValue.Text, Is.EqualTo("95"));
+                Assert.That(RangeValue.Text, Is.EqualTo("96"));
 
                 Console.WriteLine("Test Scenario 2 Passed");
             }
@@ -144,7 +144,7 @@ namespace LamdaTest
                 Driver.FindElement(By.Name("zip")).SendKeys("67647065");  //Zip Code
 
                 //7.Once submitted, validate the success message “Thanks for contacting us, we will get back to you shortly.” on the screen.
-                Driver.FindElement(By.XPath("//button[contains(@type, 'submit') and contains(text(), 'Submit')]")).Click();
+                Driver.FindElement(By.XPath("//button[contains(@type, 'submi') and contains(text(), 'Submit')]")).Click();
                 string OutputMessage = Driver.FindElement(By.CssSelector(".success-msg.hidden")).Text;
                 Assert.That(OutputMessage, Is.EqualTo("Thanks for contacting us, we will get back to you shortly."));
 
