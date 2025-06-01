@@ -12,6 +12,9 @@ namespace LamdaTest
         public void Setup()
         {
             Driver = new ChromeDriver();
+            var options = new ChromeOptions();
+            options.AddArgument("--headless=new");
+            options.AddArgument("--disable-gpu");
             Driver.Manage().Window.Maximize();
             Driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             //Driver.Url = "https://www.lambdatest.com/selenium-playground";
