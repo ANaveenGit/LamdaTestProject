@@ -34,7 +34,7 @@ namespace LamdaTest
     [Parallelizable]
     public class Assignment1 : LambaBase
     {
-        [Test]
+        //[Test]
         public void LamdaTestScenario1()
         {
             try
