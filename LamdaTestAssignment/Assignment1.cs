@@ -4,7 +4,6 @@ using OpenQA.Selenium.Support.UI;
 
 namespace LamdaTest
 {
-
     public class LambaBase
     {
         protected IWebDriver Driver { get; private set; }
@@ -13,8 +12,8 @@ namespace LamdaTest
         {
             Driver = new ChromeDriver();
             var options = new ChromeOptions();
-            options.AddArgument("--headless=new");
-            options.AddArgument("--disable-gpu");
+            //options.AddArgument("--headless=new");
+            //options.AddArgument("--disable-gpu");
             Driver.Manage().Window.Maximize();
             Driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             //Driver.Url = "https://www.lambdatest.com/selenium-playground";
